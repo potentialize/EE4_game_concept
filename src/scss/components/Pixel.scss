@@ -1,0 +1,17 @@
+@import "../variables";
+
+.Pixel {
+  width: $pixel-size;
+  height: $pixel-size;
+  margin: $pixel-margin;
+  background: $pixel-color-off;
+
+  &.active {
+    &, &.color-blue {
+      background: $pixel-color-blue;
+    }
+    &.color-orange {
+      background: $pixel-color-orange;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "../variables";
+
+.BulletDisplay, .RocketDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  width: ( $pixel-size + 2 * $pixel-margin ) * 4;
+}
