@@ -6,12 +6,26 @@
   margin: $pixel-margin;
   background: $pixel-color-off;
 
-  &.active {
+  &.active, &.flicker {
     &, &.color-blue {
       background: $pixel-color-blue;
     }
     &.color-orange {
       background: $pixel-color-orange;
     }
+  }
+
+  &.flicker {
+    animation: flicker 1.5s infinite;
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
   }
 }

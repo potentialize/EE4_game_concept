@@ -10,7 +10,7 @@ export default class BulletDisplay extends Component {
 
     return (
       <div className="BulletDisplay">
-        {pixels.map((status, i) => <Pixel key={i} active={status}/>)}
+        {pixels.map((status, i) => <Pixel key={i} status={status}/>)}
       </div>
     );
   }

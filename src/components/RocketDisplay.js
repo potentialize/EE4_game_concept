@@ -10,7 +10,7 @@ export default class RocketDisplay extends Component {
 
     return (
       <div className="RocketDisplay">
-        {pixels.map((status, i) => <Pixel key={i} active={status} color="orange"/>)}
+        {pixels.map((status, i) => <Pixel key={i} status={status} color="orange"/>)}
       </div>
     );
   }
