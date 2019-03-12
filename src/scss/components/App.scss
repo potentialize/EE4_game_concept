@@ -1,13 +1,16 @@
 @import "../variables";
 
-.App-divider {
+.App {
   display: flex;
-  width: 100%;
-  height: $divider-height;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-divider {
+  // take remaining space of parent (vh excl header and deco)
+  flex-grow: 1;
+
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  >div {
-    // flex: 1;
-  }
 }

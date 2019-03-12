@@ -5,3 +5,7 @@
   flex-wrap: wrap;
   width: ( $pixel-size + 2 * $pixel-margin ) * 4;
 }
+
+.RocketDisplay {
+  margin-top: $display-spacer;
+}

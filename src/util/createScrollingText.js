@@ -2,7 +2,7 @@ import charTo4x5 from '../util/charTo4x5.js'
 
 // NOTE: Using ticksPerScroll is not the most resource-efficient way to slow down the text movement
 //        Prefer setting ticksPerScroll to 0 and only calling when needed
-export default (text, ticksPerScroll = 6) => {
+export default (text, ticksPerScroll = 10) => {
   // tick index
   let ti = 0
 
@@ -58,9 +58,6 @@ export default (text, ticksPerScroll = 6) => {
       .concat(getRowSegment(r3, si))
       .concat(getRowSegment(r4, si))
       .concat(getRowSegment(r5, si))
-
-    // console.log('ti:\t', ti, '\tsi:\t', si)
-    console.log('segment.length', segment.length);
 
     if (ti < maxTi) {
       // update tick index
