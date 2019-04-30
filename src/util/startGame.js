@@ -43,10 +43,10 @@ export default (state, animatedText) => {
       p1: animatedText(firstTick), // reset on first tick
       p2: animatedText(firstTick), // reset on first tick
     },
-    rockets: {
-      ...state.rockets,
-      p1: blinkingRockets(tickCount),
-      p2: blinkingRockets(tickCount),
-    }
+    // rockets: {
+    //   ...state.rockets,
+    //   p1: blinkingRockets(tickCount),
+    //   p2: blinkingRockets(tickCount),
+    // }
   }
 }
